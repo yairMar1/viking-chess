@@ -1,0 +1,36 @@
+# Viking Chess (Hnefatafl)
+
+A complete, object-oriented implementation of the ancient Norse board game Hnefatafl (Viking Chess), developed in Java.
+This project showcases a robust game engine with a clean, decoupled architecture and a fully interactive graphical user interface (GUI).
+
+![Viking Chess Gameplay](Viking Chess (Hnefatafl).png)
+
+## Key Features
+
+- **Full Gameplay Logic:** Implements all core rules, including piece movement, captures by "sandwiching," and distinct win conditions for both Attackers and Defenders.
+- **Dynamic Turn Management:** The game engine correctly manages player turns and validates moves against the game's rules.
+- **Clear Game State Display:** Provides real-time feedback to players, announcing checkmates, invalid moves, and game-over conditions.
+
+## Technical Highlights & Capabilities Demonstrated
+
+This project was an opportunity to implement core software engineering principles. Here are some of the key technical capabilities demonstrated:
+
+### 1. Decoupled Architecture (Backend vs. Frontend)
+The project is architected with a strict **separation of concerns**.
+- The **backend logic** (game rules, board state, player turns) is completely independent of the presentation layer. It has no knowledge of the GUI.
+- The **frontend GUI** is responsible only for rendering the game state and capturing user input, which it forwards to the backend.
+- **Why it matters:** This design makes the code highly modular, easier to test, and allows for future expansion.
+
+### 2. Advanced Object-Oriented Programming (OOP)
+The game's components are modeled using strong OOP principles.
+- **Polymorphism and Inheritance:** An abstract `Piece` class defines common behavior, while concrete subclasses like `King`, implement their unique movement rules and characteristics.
+- **Encapsulation:** The internal state of components like the `Board` and `GameLogic` is protected, and interactions happen through a well-defined public API.
+- **Why it matters:** This creates a codebase that is clean, reusable, and easy to reason about.
+
+### 3. Custom Logic and Data Handling
+- **Custom Comparators:** The project demonstrates the ability to implement custom sorting logic using Java's `Comparator` interface. This was used to create a dynamic scoreboard at the end of the game, ranking players based on various performance statistics like the number of pieces captured or total moves made.
+- **Why it matters:** This showcases a strong understanding of the Java Collections Framework and the ability to sort and manage complex objects.
+
+### 4. Event-Driven Programming
+The GUI is fully event-driven, using **mouse listeners** to handle user interactions. Clicks on the board are translated into game actions (e.g., "select piece at X,Y" or "move selected piece to X,Y"), which are then processed by the game logic controller.
+- **Why it matters:** This is the standard paradigm for building modern user interfaces and demonstrates an understanding of handling asynchronous user input.
