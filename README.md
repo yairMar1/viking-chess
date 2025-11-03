@@ -3,7 +3,7 @@
 A complete, object-oriented implementation of the ancient Norse board game Hnefatafl (Viking Chess), developed in Java.
 This project showcases a robust game engine with a clean, decoupled architecture and a fully interactive graphical user interface (GUI).
 
-![Viking Chess Gameplay](Viking Chess (Hnefatafl).png)
+![Viking Chess Gameplay](https://github.com/yairMar1/viking-chess/blob/main/Viking%20Chess%20(Hnefatafl).png?raw=true)
 
 ## Key Features
 
